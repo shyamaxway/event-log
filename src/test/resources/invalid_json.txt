@@ -1,0 +1,1 @@
+{"id":"scsmbstgra", "state":"STARTED", "type":"APPLICATION_LOG", "hos

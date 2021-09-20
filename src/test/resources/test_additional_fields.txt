@@ -1,0 +1,6 @@
+{"id":"scsmbstgra", "random":"random", "state":"STARTED", "type":"APPLICATION_LOG", "host":"12345", "timestamp":1491377495212}
+{"id":"scsmbstgrc", "random":"random", "state":"FINISHED", "timestamp":1491377495218}
+{"id":"scsmbstgra", "random":"random", "state":"FINISHED", "type":"APPLICATION_LOG","host":"12345", "timestamp":1491377495217}
+{"id":"scsmbstgrc", "random":"random", "state":"STARTED", "timestamp":1491377495210}
+{"id":"scsmbstgrb", "random":"random", "state":"STARTED", "timestamp":1491377495213}
+{"id":"scsmbstgrb", "random":"random", "state":"FINISHED", "timestamp":1491377495216}

@@ -1,0 +1,48 @@
+buildscript {
+	ext {
+		springBootVersion = '2.1.1.RELEASE'
+		jacksonVersion = '2.9.8'
+		logbackVersion = '1.2.3'
+	}
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+	}
+}
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+
+bootJar {
+	baseName = 'application'
+	version =  '1.0-SNAPSHOT'
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+	mavenCentral()
+}
+
+
+dependencies {
+	// Spring-boot
+	compile('org.springframework.boot:spring-boot-starter')
+
+	// Json
+	compile("com.fasterxml.jackson.core:jackson-databind:${jacksonVersion}")
+
+	// HSQLDB
+	runtime("org.hsqldb:hsqldb")
+
+	// Logging
+	compile("ch.qos.logback:logback-classic:${logbackVersion}")
+
+	// Tests
+	testCompile('org.springframework.boot:spring-boot-starter-test')
+}
